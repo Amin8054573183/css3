@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a5{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: red;
+        margin-top: 30px;
+        animation-name: w5;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 5s;
+    }
+    .circle{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    animation-name: w6;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    display: block;
+}
+    @keyframes w5{
+        0%{background-color: red; left: 0px; top: 0px; border-radius: 100px;}
+        25%{background-color: yellow; left: 200px; top: 0px; transform: rotate(90deg);}
+        50%{background-color: blue; left: 200px; top: 200px;}
+        75%{background-color: green; left: 0px; top: 200px; border-radius: 0px;}
+        80%{background-color: aqua; left: 0px; top: 100px;} 
+        100%{background-color: red; left: 0px; top: 0px; transform: rotate(-90deg); opacity: 0;}
+
+    }
+    
+</style>
+<body>
+    <div class="a5"></div>
+    <!-- <div class="circle"></div> -->
+
+</body>
+</html>

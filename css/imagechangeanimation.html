@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        /* background-color: black; */
+        background-image: url(image2/karanshivani.jpeg);
+        display: grid;
+        place-items: center;
+        background-size: cover;
+    }
+    .image1{
+        height: 300px;
+        width: 500px;
+        background-image: url(image2/bheem.jpg);
+        
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* position: absolute; */
+      
+        animation: animate 6s linear infinite ;
+    }
+    @keyframes animate{
+        0%,100%{
+            background-image: url(image2/bheem.jpg);
+        }
+        25%{
+            background-image: url(image2/bheem1.jpg);
+        }
+        75%{
+            background-image: url(image2/bheem3.jpg);
+        }
+    }
+    
+</style>
+<body>
+    <div class="image1"></div>
+    
+</body>
+</html>

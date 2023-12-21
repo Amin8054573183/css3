@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        display: grid;
+        place-items: center;
+
+    }
+    .div{
+        position: absolute;
+        height: 400px;
+        width: 250px;
+        background-color: black;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .div1{
+        position: relative;
+        height: 600px;
+        width: 200px;
+        margin-top: -100px;
+        margin-left: 25px;
+        background-color: cyan;
+        /* background: linear-gradient(aqua,aqua); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: rotate 2s linear infinite;
+    }
+    @keyframes rotate{
+       0%{
+        transform: rotate(0deg);
+       } 
+       100%{
+        transform: rotate(360deg);
+       }
+    }
+    .div2{
+        position: relative;
+        height: 384px;
+        width: 230px;
+        margin-top: -492px;
+        margin-left: 10px;
+        background-color: aqua;
+        /* background-image: url(image2/akb.png); */
+        border-radius: 10px;
+        float: left;
+
+    }
+</style>
+<body>
+    <div class="div">
+        <div class="div1"></div>
+        <div class="div2">
+            <h1 style="margin-left: 40px; margin-top: 50px; font-style: ;">Instagram</h1>
+            <input type="text" placeholder="UserName" style="height: 30px; width: 160px;margin-left: 30px; border-radius: 10px; font-size: medium;color: black;" >
+            <input type="text" placeholder="Password" style="height: 30px; width: 160px;margin-left: 30px; border-radius: 10px; font-size: medium; margin-top: 20px; color: black;" >
+            <button style="height: 30px; width: 160px;margin-left: 30px; border-radius: 10px; font-size: medium; margin-top: 20px; background-color: black; color: white;" >Log In</button>
+            <p style="margin-left: 45px; ; color: black;">Forgot Password?</p>
+        </div>
+    </div>
+</body>
+</html>

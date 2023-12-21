@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+}
+.skill{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 20px;
+    
+}
+
+.amin a{
+
+    font-size: 50px;
+    color: aqua;
+
+}
+
+.amin a:hover{
+
+text-decoration: none;
+
+
+}
+.html{
+    /* position: absolute; */
+    display: grid;
+    place-items: center;
+    height: 250px;
+    width: 500px;
+    float: left;
+    padding: 25px;
+    /* background-color: aqua; */
+}
+.css{
+    height: 350px;
+    width: 500px;
+    float: left;
+    margin-top: 50px;
+    /* background-color: bl; */
+}
+.image{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-top: 100px;
+    transition: .5s;
+    cursor: pointer;
+    box-shadow:5px 0px 0px 0px cyan,
+     0px 0px 0px 5px goldenrod;
+    
+
+
+}
+.pp{
+
+border: 3px solid blue;
+/* background-color: ; */
+
+
+}
+
+
+.h{
+    font-size: 70px;
+    color: gold;
+    text-align: center;
+    margin-top: -30px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+.hh{
+    color: cyan;
+}
+.image:hover{
+    height: 65px;
+    width: 65px;
+    
+}
+.karan{
+    color: aqua;
+    font-size: 100px;
+}

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: purple;
+        display: grid;
+        place-items: center;
+    }
+    .box{
+        height: 360px;
+        width: 280px;
+       background-color: white;
+       border-radius: 30px;
+       padding: 10px;
+       overflow: hidden;
+    }
+    .img1{
+        height: 280px;
+        width: 280px;
+        border-radius: 100%;
+        margin-top: 35px;
+        transition: 2s;
+    }
+    .box2{
+        padding: 10px;
+        height: 360px;
+        width: 280px;
+        border-radius: 30px;
+        /* text-align: center; */
+    }
+    .box:hover .img1{
+        height: 0px;
+        width: 0px;
+        border-radius: 100%;
+        margin-top: 0px;
+    }
+</style>
+<body>
+    <div class="box">
+        <img src="image2/gtb2.webp" alt="" class="img1">
+        <div class="box2">
+            <p style="font-size: 40px; margin-left: 50px; margin-top: 35px;">Welcome</p>
+        <p style="font-size: 40px; margin-left: 100px; margin-top: -40px;">To</p>
+        <img src="image2/gtb6.png" alt="" height="50px" width="200px" style="margin-top: -40px; margin-left: 30px;">
+        <p style="font-size: 30px; margin-left: 50px; margin-top: -2px;">A Complete</p>
+        <p style="font-size: 30px; margin-left: 30px; margin-top: -30px;">Web designing</p>
+        <p style="font-size: 30px; margin-left: 70px; margin-top: -30px;">institute</p>
+        <button style="height: 50px; width: 150px; font-size: 20px; background-color: purple; border-radius: 10px; margin-left: 50px; margin-top: -20px;">Read More</button>
+        </div>
+    </div>
+</body>
+</html>

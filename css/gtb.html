@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+   body{
+        display: grid;
+        place-items: center;
+        background-color: rgb(56, 9, 9);
+    }
+    .gtb{
+        font-size: 150px;
+        /* font-family: Colonna MT; */
+        /* text-align: center; */
+        position: relative;
+        /* color: white; */
+        -webkit-text-stroke: 2px cyan;
+        /* margin-top: 350px; */
+        letter-spacing: 10px;
+    }
+    .gtb::before{
+        position: absolute;
+        content: attr(data);
+        height: 100%;
+        width: 0px;
+        overflow: hidden;
+        color: cyan;
+        border-right: 5px solid cyan;
+        transition: 4s ;
+    }
+    .gtb:hover::before{
+        width: 100%;
+    }
+
+    
+</style>
+<body>
+    <div class="background">
+        <h1 class="gtb" data="GTBINFOTECH">GTBINFOTECH</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .input{
+        width: 100%;
+        height: 100%;
+        /* overflow: hidden; */
+        position: fixed;
+        background-color: white;
+        background-image: url(image2/city-building-vector-10859546.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
+    }
+        /* margin-left: 800px; */
+        /* transition: all 10s linear infinite; */
+       
+    
+    .carbody{
+        position: absolute;
+        /* background-color: blue; */
+        height: 400px;
+        width: 450px;
+        margin-top: 500px;
+        animation: animat 4s linear infinite ;
+        /* animation-delay: 5s; */
+    }
+    @keyframes animat {
+      0%{
+        left: 0;
+      }
+      100%{
+        left: 1920px;
+      }
+
+    }
+    .rectangle{
+        height: 150px;
+        width: 400px;
+        background-color: red;
+        margin-top: 100px;
+        border-radius: 100px;
+        
+    }
+    .tyre1{
+    position: absolute;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 70px;
+    box-shadow: 0px 0px 1px 10px black;
+    float: left;
+    left: 60px;
+    top: 200px;
+    }
+    .tyre2{
+        position: absolute;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 70px;
+    box-shadow: 0px 0px 1px 10px black;
+    float: left;
+    left: 235px;
+    top: 200px;
+    }
+  
+    .circlebulb{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: red;
+        margin-top: -250px;
+        margin-left: 200px;
+        border-radius: 50px 50px 0 0;
+       /* filter: hue-rotate(0deg); */
+       animation: light 4s linear infinite;
+       /* animation-delay: 5s; */
+    }
+    @keyframes light{
+        0%{
+            filter: hue-rotate(0deg);
+        }
+        
+        
+        100%{
+            filter: hue-rotate(3600deg);
+        }
+    }
+    .amin{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color: brown;
+    }
+    .bird{
+        height: 100px;
+        width: 100px;
+        /* background-color: aqua; */
+        top: -400px;
+        position: absolute;
+        /* animation: animat2 12s linear infinite ; */
+        /* animation-delay: 8s; */
+    }
+    @keyframes animat2 {
+      0%{
+        left: 0;
+      }
+      100%{
+        left: 1920px;
+      }
+
+    }
+    .trapezoid-shape{
+        position: absolute;
+        border-bottom: 65px solid skyblue;
+    /* border-left: 25px solid transparent; */
+    border-right: 32.5px solid transparent;
+    height: 0;
+    width: 65px;
+    margin-top: -210px;
+    margin-left: 190px;
+    /* box-shadow: 0px 0px 1px 10px black; */
+    }
+    .rectangleup{
+        height: 65px;
+        width: 65px;
+        background-color: skyblue;
+        margin-top: -210px;
+        margin-left: 110px;
+        box-shadow: 0px 0px 1px 10px black;
+    }
+    .trapezoid-black{
+        position: absolute;
+        border-bottom: 85px solid black;
+    /* border-left: 25px solid transparent; */
+    border-right: 42.5px solid transparent;
+    height: 0;
+    width: 85px;
+    margin-top: -220px;
+    margin-left: 185px; 
+    }
+
+    
+   
+</style>
+<body>
+    <div class="input">
+        <!-- <img src="image2/city-building-vector-10859546.jpg" alt="" style="height: 100%; width: 100%;"> -->
+       <!-- <img src="af641fc38c0726bd-flying-bird-gif-transparent-gm6-info.gif" alt=""> -->
+        <div class="carbody">
+    
+    <!-- <div class="cardiv"> -->
+        <div class="rectangle"></div>
+        <div class="tyre1"></div>
+        <div class="tyre2"></div>
+        <div class="rectanglebulb"></div>
+        <div class="circlebulb"></div>
+        <div class="trapezoid-black"></div>
+        <div class="trapezoid-shape"></div>
+        <div class="rectangleup"></div>
+        <div class="bird">
+            <img src="https://media3.giphy.com/media/ghiMEnnnIE5xe/200w.gif?cid=6c09b9527pwfte50jsvyf12wdjq98qtcw1w7y8y8ogyph49v&ep=v1_gifs_search&rid=200w.gif&ct=s " alt="" style="transform: rotate(180deg);">
+        </div>
+    </div>
+     
+    </div>
+</div>
+
+</body>
+</html>

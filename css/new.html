@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+
+body{
+    background: radial-gradient(blue,black);
+    display: grid;
+    place-items: center;
+}
+.bigcircle{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    border: 20px solid white;
+    animation: rotate 6s linear infinite;
+    /* backgrou nd-color: aqua; */
+    /* box-shadow: 0px 0px 20px 20px white; */
+
+}
+@keyframes rotate{
+       0%{
+        transform: rotate(0deg);
+        opacity: 0;
+        
+       }
+       50%{
+        transform: rotate(360deg);
+        opacity: 1;
+       }
+       100%{
+        transform: rotate(0deg);
+        opacity: 0;
+       }
+
+}
+
+.circle{
+    position: relative;
+    height: 25px;
+    width: 25;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-left: 106px;
+    margin-top: 17px;
+}
+.circle::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    left: 65px;
+    background-color: #fff;
+}
+.circle::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+    left: 120px;
+    top: 33px;
+}
+
+.circle2{
+    position: relative;
+    height: 25px;
+    width: 25;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-top: 12px;
+}
+.circle2::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    left: -30px;
+    top: 55px;
+    background-color: #fff;
+}
+.circle2::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+    left: -30px;
+    top: 120px;
+}
+.circle3{
+    position: relative;
+    height: 25px;
+    width: 25;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-left: 257px;
+    margin-top: 25px;
+}
+.circle3::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    left: -0px;
+    top: 67px;
+    background-color: #fff;
+}
+.circle3::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+    left: -30px;
+    top: 120px;
+}
+.circle4{
+    position: relative;
+    height: 25px;
+    width: 25;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-left: 170px;
+    margin-top: 128px;
+}
+.circle4::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    left: -60px;
+    top: 5px;
+    background-color: #fff;
+}
+.circle4::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+    left: -120px;
+    top: -25px;
+}
+
+
+
+</style>
+<body>
+    <div class="bigcircle">
+
+        <div class="circle"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    
+        
+        
+    </div>
+</body>
+</html>

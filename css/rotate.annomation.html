@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+    }
+    .div1{
+        position: absolute;
+        height: 300px;
+        width: 200px;
+        background-color: purple;
+        float: left;
+        margin-left: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+    
+    
+
+    }
+    .div2{
+        float: left;
+        position: relative;
+        height: 450px;
+        width: 140px;
+        margin-top: -80px;
+        margin-left: 25px;
+        background: linear-gradient(red,green,blue);
+        animation: rotate 5s linear infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @keyframes rotate{
+       0%{
+        transform: rotate(0deg);
+       } 
+       100%{
+        transform: rotate(360deg);
+       }
+    }
+    .div3{
+        position: relative;
+        height: 280px;
+        width: 180px;
+        background-color: purple;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+   <div class="div1">
+    <div class="div2"></div>
+    <div class="div3"></div>
+   </div>
+   
+   
+    
+</body>
+</html>

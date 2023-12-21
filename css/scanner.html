@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    body{
+        background-color: black;
+        display: grid;
+        place-items: center;
+    }
+    .div1{
+  
+        height: 400px;
+        position: relative;
+        width: 600px;
+        background-image: url(image2/aminthumb.png );
+        /* background-image: url(image2/karanthumb2.png); */
+        background-size: 100%;
+        /* animation: anim 2s linear infinite; */
+    }
+    .div1::before{
+        height: 400px;
+        position: absolute;
+        content: "";
+        width: 600px;
+        /* border-top: 5px solid cyan; */
+        background-image: url(image2/karanthumb2.png);
+        background-size: 100% ;
+        animation: animate 2s linear infinite;
+    }
+    @keyframes animate{
+        0%,100%{
+            height: 10px;
+        }
+       
+        50%{
+            height: 400px ;
+        }
+      
+    }
+    .div1::after{
+        height: 5px;
+        position: absolute;
+        content: '';
+        width: 550px;
+        background-color: cyan;
+        /* border-top: 5px solid cyan; */
+        background-size: 100%;
+        animation: anima 2s linear infinite;
+        box-shadow: 0px 0px 20px  cyan,
+                     0px 0px 50px  cyan;
+        
+    }
+    
+    
+    .div:hover{
+        height: 100%;
+    }
+    
+    @keyframes anima{
+        0%,100%{
+            margin-top: 10px;
+
+        }
+        50%{
+            margin-top: 400px;
+        }
+    }
+   
+ </style>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+</html>
+    

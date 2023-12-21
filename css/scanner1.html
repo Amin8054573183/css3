@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        display: grid;
+        place-items: center;
+    }
+    .div{
+        height: 400px;
+        width: 600px;
+        position: relative;
+        background-image: url(image2/aminthumb.png);
+        background-size: 100%;
+    }
+    .div::before{
+        height: 10px;
+        position: absolute;
+        content: '';
+        width: 600px;
+        background-image: url(image2/karanthumb2.png);
+        background-size: 100%;
+        animation: animate 4s linear infinite;
+
+    }
+    @keyframes animate{
+        0%{
+            height: 10px;
+        }
+        100%{
+            height: 400px;
+        }
+    }
+</style>
+<body>
+    <div class="div"></div>
+</body>
+</html>

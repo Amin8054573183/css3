@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        display: grid;
+        place-items: center;
+    }
+    .rectangle{
+        height: 70px;
+        width: 250px;
+        /* background-color: blue; */
+        border-radius: 50px;
+        border: 5px solid blue;
+    }
+    .circle{
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+        background-color: blue;
+        transition: 1s ;
+
+    }
+   
+    .rectangle:hover  .circle{
+        /* cursor: pointer; */
+        
+        margin-left: 180px;
+    }
+   
+
+    
+</style>
+<body>
+   <div class="rectangle">
+    <div class="circle"></div>
+   </div> 
+</body>
+</html>
